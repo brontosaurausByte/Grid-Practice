@@ -1,0 +1,21 @@
+*{
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+body{
+  background: #fbfbfb;
+}
+.wrapper{
+  width: 90%;
+  margin: 0 auto;
+}
+.item{
+  background: #69fdf6;
+  color: black;
+  padding: 10px;
+}
+.item:nth-child(even){
+  background: #236fc8;
+}
+
