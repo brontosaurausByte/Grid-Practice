@@ -5,16 +5,36 @@ padding: 0;
 
 }
 body{
-  background: #fafafa;
-}
+  
+  width: 1200px;
+  margin: 0 auto;
 
+}
+.backgroundColor{
+  background: rgba(128, 128, 128, 0.466);
+  width: 1200px;
+  height: 100vh;
+}
 nav{
   display:grid;
   grid-template-columns: repeat(3, 1fr);
-  justify-items: flex-end;
+  justify-items: center;
   align-items: center;
   background-color: black;
+  width: 1200px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  }
 
+.logo{
+
+  background-image:url(fakelogo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-width: 50px;
+  height: 50px;
+  grid-column: 1 / 1;
+  
 }
 
 button{
@@ -24,7 +44,7 @@ button{
   border: 1px solid black;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   grid-column: 3 / 3;
-  margin-right: 25%;
+  
   background-color:#fafafa;
 }
 button:hover{
@@ -64,8 +84,11 @@ ul a:hover {
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   grid-auto-rows: 200px;
   grid-gap: 10px;
-  box-shadow: 1px 2px 8px;
+  box-shadow: 1px 2px 12px;
+  background-color:#fafafa;
+
 }
+
 .item{
   background-size: cover;
   background-position: center;
@@ -101,10 +124,7 @@ ul a:hover {
 .item6{
 
   background-image: url(cow3.jpg);
-
 }
-
-
 }
 .item7{
 
@@ -115,4 +135,8 @@ ul a:hover {
 }
 .item9{
   background-image: url(cow4.jpg);
+}
+
+h3 > p > a {
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
