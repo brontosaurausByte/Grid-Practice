@@ -5,25 +5,77 @@ padding: 0;
 
 }
 body{
-  background: #fbfbfb;
+  background: #fafafa;
 }
+
+nav{
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: flex-end;
+  align-items: center;
+  background-color: black;
+
+}
+
+button{
+  width: 100px;
+  height: 25px;
+  border-radius: 50px;
+  border: 1px solid black;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  grid-column: 3 / 3;
+  margin-right: 25%;
+  background-color:#fafafa;
+}
+button:hover{
+  cursor: pointer;
+  background-color: black;
+  color: #fafafa;
+  border: 1px solid #fafafa;
+}
+
+ul{
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+    grid-column: 2 / 2;
+  list-style-type: none;
+}
+
+li{
+  padding: 10px 30px 10px 30px;
+}
+
+ul a {
+  text-decoration: none;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fafafa;
+  }
+
+ul a:hover {
+  cursor: pointer;
+}
+
+
 .wrapper{
   margin: 0 auto;
-  width: 90%;
+  padding: 10px;
+  width: 900px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   grid-auto-rows: 200px;
   grid-gap: 10px;
-
+  box-shadow: 1px 2px 8px;
 }
-
 .item{
   background-size: cover;
   background-position: center;
-
   padding: 10px;
 }
-
+@media(min-width: 400px){
+  .item5{
+    grid-column: auto / span 2;
+    grid-row: auto / span 2;
+  }
 .item1{
 
   background-image: url(cow1.jpg);
@@ -49,6 +101,10 @@ body{
 .item6{
 
   background-image: url(cow3.jpg);
+
+}
+
+
 }
 .item7{
 
